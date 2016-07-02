@@ -1,4 +1,4 @@
-body {
+﻿body {
         background: #E8E8E8;
 }
 
@@ -47,7 +47,7 @@ body {
         border-left: 1px solid white;
         border-right: 1px solid white;
         box-sizing: border-box;
-        background-color: 484848;
+        background-color: #484848;
 }
 
 
@@ -57,18 +57,21 @@ body {
         float: left;
         margin-top: 40px;
         width: 25%;
-        border: 1px solid;
-        border-color: c8c8c8;
 }
 
+
+
+/**пропадает рамка при наведении(**/
 .left_menu li{
         display: block;
         position: relative;
         overflow: hidden;
-        border-bottom: 1px solid;
-        border-color: c8c8c8;
+        border-top: 1px solid;
+	border-left: 1px solid;
+	border-right: 1px solid;
+        border-color: #c8c8c8;
         length: height;
-/*про схлопывание границ я так и не поняла*/
+
 }
 
 .left_menu a {
@@ -81,12 +84,13 @@ body {
 
 .left_menu li a:hover {
         color: #2c2c2c;
-        background-color: f9f9f9;
+        background-color: #f9f9f9;
         padding-left: 50px;
 }
 
 .left_menu li:last-child {
-        border-bottom: none;
+        border-bottom: 1px solid;
+        border-color: #c8c8c8;
 }
 
 
@@ -101,7 +105,7 @@ body {
         padding: 50px;
         box-sizing: border-box;
         border: 1px solid;
-        border-color: c8c8c8;
+        border-color: #c8c8c8;
         text-align: center;
         display: table-cell;
         vertical-align: middle;
