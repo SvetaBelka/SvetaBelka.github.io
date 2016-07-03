@@ -22,12 +22,14 @@
         overflow: hidden;
         margin-top: 15px;
         background-image: linear-gradient(to top, #444343 0%, #5e5e5e 100%);
+	border-left: 1px solid transparent;
 }
 
 
 .menu li {
         float: left;
         list-style-type: none;
+	
 }
 
 .menu li a {
@@ -39,7 +41,7 @@
         font-family: Calibri; /*Open Sens шрифт я подключить не смогла*/
         text-align: center;
         line-height: 40px;
-        box-sizing: border-box;    
+	
 }
 
 
@@ -58,8 +60,6 @@
         margin-top: 40px;
         width: 25%;
 }
-
-
 
 /**пропадает рамка при наведении(**/
 .left_menu li{
@@ -80,6 +80,7 @@
         display: block;
         text-decoration: none;
         color: #7a7878;
+ 	box-sizing: border-box;    
 }
 
 .left_menu li a:hover {
