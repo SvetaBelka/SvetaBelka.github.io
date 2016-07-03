@@ -1,0 +1,238 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+
+body {
+        background: #0c739f;
+}
+
+/*div under content как с помощью сервиса для создания градиента получить нужный нам градиент для подложки и всего body?
+пыталась копировать цвета с помощью фотошопа и закидывать на сайт, но так и не добилась результата*/
+.under_wripper {
+        position: fixed;
+        top: 30px;
+        height: 155px;
+        width: 100%;
+        background-color: white;
+}
+
+/*all content*/
+.Wripper {
+        position: absolute;
+        /*z-index: 1;*/
+        left: 0;
+        right:0;
+        margin: 0 auto;
+        width: 1000px;
+        background: white;
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+/**header**/
+
+.header {
+        height: 185px;
+        border-bottom: 2px solid #138aa7;
+}
+
+.left_header {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 15px 0px 0px 30px;
+
+}
+
+.right_header {
+        float: right;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 15px;
+}
+
+.contacts {
+        float: right;
+}
+
+
+.contacts li {
+        list-style-type: none;
+        padding-right: 20px;
+        color: #41a1b9;
+        font-size: 16px;
+        font-family: Tahoma Regular;
+        text-align: left;
+        line-height: 20px;
+}
+
+.contacts li a {
+        display: block;
+        color: #41a1b9;
+        padding-right: 20px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: Tahoma Regular;
+        text-align: left;
+        line-height: 20px;
+}
+
+.countries {
+        clear: both;
+        float: right;
+        padding-top: 10px;
+        position: relative;
+        overflow: hidden;
+}
+
+.countries li {
+        float: left;
+        color: #2292ad;
+        list-style-type: none;
+        width: 60px;
+}
+
+.countries li a {
+        display: block;
+        color: #2292ad;
+        font-size: 12px;
+        font-family: Tahoma Regular;
+        text-align: center;
+
+}
+
+/**main image**/
+
+
+.main_image {
+        clear: both;
+}
+
+.main_image img {
+        display: block;
+        border-bottom: 2px solid #138aa7;
+        box-sizing: border-box;
+
+}
+
+/*menu*/
+
+.menu {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background: #323232;
+	      border-bottom: 1px solid black;
+      /*  box-shadow: ????*/
+}
+
+
+.menu ul li {
+        display: block;
+        float: left;
+        list-style-type: none;
+}
+
+
+
+.menu li a{
+        display: block;
+        width: 142px;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Tahoma Regular;
+        text-align: center;
+        line-height: 30px;
+        box-sizing: border-box;
+}
+
+
+.submenu a {
+    text-decoration: none;
+    color: white;
+    line-height: 23px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 142px;
+    top: 40px;
+    left: 0;
+    background-color: rgb( 48, 48, 48 );
+    box-shadow: 0px 4.33px 5px 0px rgb( 0, 0, 0 );
+}
+
+.submenu li {
+    display: block;
+}
+
+.menu ul li:hover .submenu {
+    display: block;
+}
+
+.submenu li a:hover {
+    text-decoration: underline;
+}
+.menu li:hover ul.submenu {
+        display: block;
+}
+
+.content {
+        clear: both;
+        width: 100%;
+        overflow: hidden; /* чтобы лишее обрезалось */
+}
+
+
+.leftColumn {
+	      width: 20%;
+	      float: left;
+        background: #edeef0;
+	      padding-bottom: 20000px;
+        margin-bottom: -20000px;
+        border-right: 1px solid #c7cacf;
+        box-sizing: border-box;
+}
+.leftColumn p,
+.rightColumn p {
+        text-align: center;
+}
+
+.text_column {
+        text-align: center;
+        line-height: 2;
+        font-family: Tahoma Regular;
+}
+.centerColumn {
+        width: 60%;
+        float: left;
+        background: white;
+        box-sizing: border-box;
+        padding-bottom: 20000px;
+        margin-bottom: -20000px;
+}
+
+.rightColumn {
+      	width: 20%;
+      	float: left;
+      	background: #edeef0;
+      	padding-bottom: 20000px;
+      	margin-bottom: -20000px;
+        border-left: 1px solid #c7cacf;
+        box-sizing: border-box;
+}
+
+
+
+.footer {
+        line-height: 34px;
+        font-size: 18px;
+        font-family: Tahoma Regular;
+        text-align: center;
+        color: white;
+
+}
