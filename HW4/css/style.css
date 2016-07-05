@@ -177,7 +177,10 @@ body {
         ul.submenu > li > a:hover {
             text-decoration: underline;
         }
-
+.topmenu li:hover > ul {
+    display:block;
+    border-top: 1px solid black;
+}
 
 
 .content {
