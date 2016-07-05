@@ -111,12 +111,8 @@ body {
 
 /*menu*/
 
-.menu {
-        display: block;
-        position: relative;
-        overflow: hidden;
-        background: #323232;
-	      border-bottom: 1px solid black;
+.nav {
+          background: #323232;
 }
 
 .topmenu {
@@ -130,6 +126,7 @@ body {
         width: 138px;
         line-height: 40px;
         position: relative;
+
 }
 
         ul {
@@ -153,17 +150,19 @@ body {
             color: white;
             text-decoration: none;
         }
-        
+
         ul.submenu {
             display: none;
             position: absolute;
             top: 37px;
             left: 0;
             background-color: white;
-            border: 1px solid red;
+
+
         }
         ul.submenu > li {
             display: block;
+            background: #323232;
         }
         ul.submenu > li > a {
             display: block;
@@ -179,7 +178,14 @@ body {
         }
 
 
+.topmenu li:hover > .submenu {
+    display:block;
+    border-top: 1px solid black;
 
+}
+
+
+/*Content*/
 .content {
         clear: both;
         width: 100%;
@@ -202,9 +208,11 @@ body {
 }
 
 .text_column {
+
         text-align: center;
         line-height: 2;
         font-family: Tahoma Regular;
+      
 }
 .centerColumn {
         width: 60%;
@@ -219,7 +227,7 @@ body {
       	width: 20%;
       	float: right;
       	background: #edeef0;
-      	padding-bottom: 20000px;
+        padding-bottom: 20000px;
       	margin-bottom: -20000px;
         border-left: 1px solid #c7cacf;
         box-sizing: border-box;
