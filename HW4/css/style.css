@@ -114,7 +114,6 @@ body {
 .menu {
         display: block;
         position: relative;
-        overflow: hidden;
         background: #323232;
 	      border-bottom: 1px solid black;
 }
@@ -182,6 +181,11 @@ body {
     border-top: 1px solid black;
 }
 
+.topmenu li:hover > .submenu {
+    display:block;
+    border-top: 1px solid black;
+    
+}
 
 .content {
         clear: both;
