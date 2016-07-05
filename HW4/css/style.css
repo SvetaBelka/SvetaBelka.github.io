@@ -5,28 +5,20 @@
 
 
 body {
-        background: #0c739f;
+        background: url(../img/background.png);
 }
 
 /*div under content как с помощью сервиса для создания градиента получить нужный нам градиент для подложки и всего body?
 пыталась копировать цвета с помощью фотошопа и закидывать на сайт, но так и не добилась результата*/
-.under_wripper {
-        position: fixed;
-        top: 30px;
-        height: 155px;
-        width: 100%;
-        background-color: white;
-}
 
 /*all content*/
+
+
 .Wripper {
-        position: absolute;
-        /*z-index: 1;*/
-        left: 0;
-        right:0;
         margin: 0 auto;
         width: 1000px;
         background: white;
+        height: auto;
         box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -34,7 +26,7 @@ body {
 /**header**/
 
 .header {
-        height: 185px;
+        height: 213px;
         border-bottom: 2px solid #138aa7;
 }
 
@@ -82,7 +74,7 @@ body {
 .countries {
         clear: both;
         float: right;
-        padding-top: 10px;
+        padding-top: 30px;
         position: relative;
         overflow: hidden;
 }
@@ -125,61 +117,68 @@ body {
         overflow: hidden;
         background: #323232;
 	      border-bottom: 1px solid black;
-      /*  box-shadow: ????*/
 }
 
+.topmenu {
+        position: relative;
+}
 
-.menu ul li {
-        display: block;
+.topmenu li {
+        display: inline-block;
         float: left;
-        list-style-type: none;
-}
-
-
-
-.menu li a{
-        display: block;
-        width: 142px;
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        font-family: Tahoma Regular;
         text-align: center;
-        line-height: 30px;
-        box-sizing: border-box;
+        width: 138px;
+        line-height: 40px;
+        position: relative;
 }
 
+        ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul:after {
+            display: block;
+            content: ' ';
+            clear: both;
+            float: none;
+        }
+        ul.topmenu > li {
+            float: left;
+            position: relative;
+        }
+        ul.topmenu > li > a {
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+        
+        ul.submenu {
+            display: none;
+            position: absolute;
+            top: 37px;
+            left: 0;
+            background-color: white;
+            border: 1px solid red;
+        }
+        ul.submenu > li {
+            display: block;
+        }
+        ul.submenu > li > a {
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+        ul.submenu > li > a:hover {
+            text-decoration: underline;
+        }
 
-.submenu a {
-    text-decoration: none;
-    color: white;
-    line-height: 23px;
-}
+        ul.submenu > li > a:hover {
+            text-decoration: underline;
+        }
 
-.submenu {
-    display: none;
-    position: absolute;
-    width: 142px;
-    top: 40px;
-    left: 0;
-    background-color: rgb( 48, 48, 48 );
-    box-shadow: 0px 4.33px 5px 0px rgb( 0, 0, 0 );
-}
 
-.submenu li {
-    display: block;
-}
-
-.menu ul li:hover .submenu {
-    display: block;
-}
-
-.submenu li a:hover {
-    text-decoration: underline;
-}
-.menu li:hover ul.submenu {
-        display: block;
-}
 
 .content {
         clear: both;
@@ -218,7 +217,7 @@ body {
 
 .rightColumn {
       	width: 20%;
-      	float: left;
+      	float: right;
       	background: #edeef0;
       	padding-bottom: 20000px;
       	margin-bottom: -20000px;
@@ -228,11 +227,9 @@ body {
 
 
 
-.footer {
-        line-height: 34px;
-        font-size: 18px;
-        font-family: Tahoma Regular;
+footer {
+        clear: both;
+        margin: 5px;
         text-align: center;
         color: white;
-
 }
